@@ -1,0 +1,76 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   SUMMER! 🏖️
+  </title>
+  <link rel="icon" type="image/x-icon" href="https://static-00.iconduck.com/assets.00/discord-icon-256x256-9roejvqx.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-black text-white h-screen flex items-center justify-center relative overflow-hidden">
+  <img alt="gif background" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://s5.ezgif.com/tmp/ezgif-5-d2c1e68220.gif" width="1920"/>
+  
+
+  <audio id="background-audio" loop>
+    <source src="/newjeans.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="absolute top-4 left-4">
+   <i id="volume-icon" class="fas fa-volume-up text-white text-2xl cursor-pointer" onclick="toggleMute()"></i>
+  </div>
+  
+  <div class="absolute top-4 right-4">
+   <i class="fas fa-bug text-white text-2xl"></i>
+  </div>
+  
+  <div class="relative bg-black bg-opacity-50 p-6 rounded-lg flex flex-col items-center space-y-4">
+   <div class="flex items-center space-x-4">
+    <img alt="Profile picture of summerz" class="w-16 h-16 rounded-full" height="100" src="https://media.discordapp.net/attachments/1328903132436107264/1330262063808909363/hori.jpg?ex=678d5697&is=678c0517&hm=d32e33a3c786ff91ecd0c8d5d386ff134d54881c6a81aa21d65870a01b1a5962&=&format=webp" width="100"/>
+    <div>
+     <div class="flex items-center space-x-2">
+      <span class="text-xl font-bold">Summerz</span>
+      <span class="text-sm text-gray-400">joined over 2 years ago | 2009</span>
+     </div>
+     <div class="flex items-center space-x-2">
+      <img alt="Profile picture of summerz" class="w-8 h-8 rounded-full" height="100" src="https://images-ext-1.discordapp.net/external/3RWFptUE54sd6BRA-LNtIkvyjDtFab8krTuBLZo5jl4/%3Fsize%3D1024%26format%3Dwebp/https/cdn.discordapp.com/avatars/946942520141688863/81b80cba12ccdc42b2282bac3963acde.webp?format=webp" width="100"/>
+      <span class="text-lg">blend</span>
+      <span class="text-sm text-gray-400">I &lt;3 U</span>
+     </div>
+    </div>
+   </div>
+   <div class="text-4xl font-extrabold text-pink-500">summer</div>
+   <div class="flex space-x-4">
+    <a href="https://media.discordapp.net/attachments/1327870505218216037/1330274693688856667/image.png?ex=678d625a&is=678c10da&hm=95aed0902295be36a024b2c9ffe2f4a34c29243d43df6f8cbf9206b4c0fdb24e&=&format=webp&quality=lossless&width=501&height=597" target="_blank">
+      <i class="fab fa-discord text-2xl"></i>
+    </a>
+    <a href="https://www.roblox.com/users/1611264692/profile" target="_blank">
+      <img src="https://media.discordapp.net/attachments/1328903132436107264/1330270649603588247/AwhrS8PbSlr4AAAAAElFTkSuQmCC.png?ex=678d5e96&is=678c0d16&hm=f7d063ffa0482448954da995a5fa8b3865dba4f1081e93068c14225573f9e759&=&format=webp&quality=lossless" alt="Roblox Profile" class="w-8 h-8 rounded-full"/>
+    </a>
+    <i class="fas fa-code text-2xl"></i>
+    <i class="fab fa-ethereum text-2xl"></i>
+   </div>
+   <div class="text-sm text-gray-400">4,988 views</div>
+  </div>
+  
+  <script>
+    const audio = document.getElementById('background-audio');
+    audio.play(); // Start playing the audio when the page loads
+
+    function toggleMute() {
+      const volumeIcon = document.getElementById('volume-icon');
+      if (audio.muted) {
+        audio.muted = false;
+        volumeIcon.classList.remove('fa-volume-mute');
+        volumeIcon.classList.add('fa-volume-up');
+      } else {
+        audio.muted = true;
+        volumeIcon.classList.remove('fa-volume-up');
+        volumeIcon.classList.add('fa-volume-mute');
+      }
+    }
+  </script>
+ </body>
+</html>
