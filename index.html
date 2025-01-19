@@ -1,4 +1,4 @@
-<html lang="en">
+  <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -11,15 +11,6 @@
  </head>
  <body class="bg-black text-white h-screen flex items-center justify-center relative overflow-hidden">
   <img alt="gif background" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://summerbland.github.io/gangster.gif" width="1920"/>
-  
-<audio id="background-music" autoplay loop>
-        <source src="https://summerbland.github.io/newjeans.mp3" type="audio/mpeg">
-        Your browser does not support the audio tag.
-    </audio>
-
-  <div class="absolute top-4 left-4">
-   <i id="volume-icon" class="fas fa-volume-up text-white text-2xl cursor-pointer" onclick="toggleMute()"></i>
-  </div>
   
   <div class="absolute top-4 right-4">
    <i class="fa-brands fa-dev text-white text-2xl"></i>
@@ -52,30 +43,10 @@
     <i class="fab fa-ethereum text-2xl"></i>
    </div>
    <div class="text-sm text-gray-400">4,988 views</div>
-  </div>
-  
-  <script>
-    const audio = document.getElementById('https://summerbland.github.io/newjeans.mp3');
-    
-    // Play audio when the page loads
-    window.addEventListener('load', () => {
-      audio.play().catch(error => {
-        console.log('Playback failed:', error);
-      });
-    });
+<div>
 
-    function toggleMute() {
-      const volumeIcon = document.getElementById('volume-icon');
-      if (audio.muted) {
-        audio.muted = false;
-        volumeIcon.classList.remove('fa-volume-mute');
-        volumeIcon.classList.add('fa-volume-up');
-      } else {
-        audio.muted = true;
-        volumeIcon.classList.remove('fa-volume-up');
-        volumeIcon.classList.add('fa-volume-mute');
-      }
-    }
-  </script>
+<audio id="background-music" autoplay loop><source src="https://summerbland.github.io/newjeans.mp3" type="audio/mpeg"></audio>
+
+  </div>
  </body>
 </html>
