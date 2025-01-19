@@ -12,9 +12,8 @@
  <body class="bg-black text-white h-screen flex items-center justify-center relative overflow-hidden">
   <img alt="gif background" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://summerbland.github.io/gangster.gif" width="1920"/>
   
-
-  <audio id="background-audio" loop>
-    <source src="summerbland.github.io/newjeans.mp3" type="audio/mpeg">
+  <audio id="background-audio" loop autoplay muted>
+    <source src="https://summerbland.github.io/newjeans.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
@@ -56,8 +55,14 @@
   </div>
   
   <script>
-    const audio = document.getElementById('background-audio');
-    audio.play(); // Start playing the audio when the page loads
+    const audio = document.getElementById('https://summerbland.github.io/newjeans.mp3');
+    
+    // Play audio when the page loads
+    window.addEventListener('load', () => {
+      audio.play().catch(error => {
+        console.log('Playback failed:', error);
+      });
+    });
 
     function toggleMute() {
       const volumeIcon = document.getElementById('volume-icon');
